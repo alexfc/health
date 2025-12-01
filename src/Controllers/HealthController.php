@@ -34,6 +34,7 @@ class HealthController extends Controller
                 ],
                 $commonStatus, Carbon::now(config('app.timezone'))->toIso8601String(),
             ),
+            $commonStatus === HealthService::STATUS_UNHEALTHY ? 503 : 200,
         );
     }
 }
