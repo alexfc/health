@@ -11,5 +11,6 @@ class HealthServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(HealthServiceInterface::class, HealthService::class);
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
     }
 }
