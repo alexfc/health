@@ -1,0 +1,17 @@
+{
+    "name": "alexfc/health",
+    "description": "Simple app health status page",
+    "autoload": {
+        "psr-4": {
+            "Alexfc\\Health\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander",
+            "email": "b1c2d3@yandex.ru"
+        }
+    ],
+    "require": {
+    }
+}
